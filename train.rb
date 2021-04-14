@@ -17,7 +17,7 @@ class Train
 
     puts register_instance
   end
-  
+
   def accelerate(speed = 10)
     @speed += speed
   end

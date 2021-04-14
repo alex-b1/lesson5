@@ -263,12 +263,12 @@ class Main
 
     print 'Введи название производителя: '
     manufacturer = get_string
-    train.set_company_name(manufacturer)
+    train.company_name = manufacturer
   end
 
   def get_train_manufacturer
     train = select_train
-    puts "Производитель #{train.get_company_name}"
+    puts "Производитель #{train.company_name}"
   end
 
   def set_carriage_manufacturer
@@ -277,14 +277,14 @@ class Main
     print 'Введи название производителя вагонов поезда: '
     manufacturer = get_string
     train.carriages.each do |i|
-      i.set_company_name(manufacturer)
+      i.company_name = manufacturer
     end
   end
 
   def get_carriage_manufacturer
     train = select_train
     train.carriages.each do |i|
-      puts "Производитель #{i.get_company_name}"
+      puts "Производитель #{i.company_name}"
     end
   end
 

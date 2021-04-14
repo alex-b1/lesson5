@@ -1,10 +1,4 @@
 module CompanyManufacturer
+  attr_accessor :company_name
 
-  def set_company_name(company_name)
-    @company_name = company_name
-  end
-
-  def get_company_name
-    @company_name
-  end
 end
